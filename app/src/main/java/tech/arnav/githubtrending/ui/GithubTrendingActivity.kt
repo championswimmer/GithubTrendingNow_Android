@@ -15,7 +15,12 @@ class GithubTrendingActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
         githubTrendingViewModel = ViewModelProvider(this).get(GithubTrendingViewModel::class.java)
+
+        githubTrendingViewModel.refreshRepos()
+        githubTrendingViewModel.refreshDevs()
+        githubTrendingViewModel.refreshLangs()
 
 
         supportFragmentManager.commit {

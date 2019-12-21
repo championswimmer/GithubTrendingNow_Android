@@ -23,7 +23,6 @@ class RepositoriesFragment : Fragment() {
         super.onCreate(savedInstanceState)
         activity?.let {
             githubTrendingViewModel = ViewModelProvider(it).get(GithubTrendingViewModel::class.java)
-            githubTrendingViewModel?.refreshRepos()
         }
     }
 
