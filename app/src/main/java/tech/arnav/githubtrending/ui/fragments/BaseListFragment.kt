@@ -37,9 +37,6 @@ abstract class BaseListFragment<T> : Fragment() {
         // Inflate the layout for this fragment
         val rootView = inflater.inflate(getLayoutResId(), container, false)
         listAdapter = getAdapter()
-        rootView.rvRepositories.layoutManager = LinearLayoutManager(activity)
-        rootView.rvRepositories.adapter = listAdapter
-
 
         return rootView
     }

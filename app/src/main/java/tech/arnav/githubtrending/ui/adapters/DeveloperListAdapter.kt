@@ -7,7 +7,7 @@ import tech.arnav.lib.trendinggithub.models.Developer
 
 class DeveloperListAdapter(
     layoutId: Int,
-    bindView: ((itemView: View, T: Developer) -> Unit)? = null
+    bindView: ((itemView: View, item: Developer) -> Unit)? = null
 ) :
     BaseListAdapter<Developer>(layoutId, bindView) {
 

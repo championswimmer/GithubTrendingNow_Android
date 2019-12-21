@@ -7,7 +7,7 @@ import tech.arnav.lib.trendinggithub.models.Repository
 
 class RepositoryListAdapter(
     layoutId: Int,
-    bindView: ((itemView: View, T: Repository) -> Unit)? = null
+    bindView: ((itemView: View, item: Repository) -> Unit)? = null
 ) :
     BaseListAdapter<Repository>(layoutId, bindView) {
 

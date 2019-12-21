@@ -9,6 +9,15 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 
+/**
+ * @author championswimmer
+ *
+ * A base class to create list adapters from.
+ *
+ * @param layoutId The row item layout for this adapter
+ * @param bindView (optional) layout <-> data binding function. if not provided
+ *          will fall-back to using the [baseBindView] function
+ */
 abstract class BaseListAdapter<T>(
     @LayoutRes val layoutId: Int,
     val bindView: ((itemView: View, item: T) -> Unit)?

@@ -9,6 +9,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView
 import kotlinx.android.synthetic.main.activity_main.*
 import tech.arnav.githubtrending.R
 import tech.arnav.githubtrending.ui.fragments.DeveloperListFragment
+import tech.arnav.githubtrending.ui.fragments.LanguageListFragment
 import tech.arnav.githubtrending.ui.fragments.RepositoryListFragment
 import tech.arnav.githubtrending.viewmodels.GithubTrendingViewModel
 
@@ -39,6 +40,7 @@ class GithubTrendingActivity : AppCompatActivity(),
         return when (item.itemId) {
             R.id.menu_repositories -> RepositoryListFragment.newInstance()
             R.id.menu_developers -> DeveloperListFragment.newInstance()
+            R.id.menu_languages -> LanguageListFragment.newInstance()
             else -> null
         }?.let {
 

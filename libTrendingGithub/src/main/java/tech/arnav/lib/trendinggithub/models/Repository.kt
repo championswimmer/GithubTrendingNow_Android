@@ -3,6 +3,7 @@ package tech.arnav.lib.trendinggithub.models
 
 import com.squareup.moshi.Json
 import com.squareup.moshi.JsonClass
+import java.io.Serializable
 
 @JsonClass(generateAdapter = true)
 data class Repository(
@@ -17,11 +18,11 @@ data class Repository(
     @Json(name = "forks") val forks: Int,
     @Json(name = "currentPeriodStars") val currentPeriodStars: Int,
     @Json(name = "builtBy") val builtBy: List<Author>
-) {
+): Serializable {
     @JsonClass(generateAdapter = true)
     data class Author(
         @Json(name = "username") val username: String,
         @Json(name = "href") val href: String,
         @Json(name = "avatar") val avatar: String
-    )
+    ): Serializable
 }
