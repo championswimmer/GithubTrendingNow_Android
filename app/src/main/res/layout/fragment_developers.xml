@@ -6,7 +6,7 @@
         tools:context=".ui.fragments.RepositoryListFragment">
 
     <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rvRepositories"
+            android:id="@+id/rvDevelopers"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
 </FrameLayout>

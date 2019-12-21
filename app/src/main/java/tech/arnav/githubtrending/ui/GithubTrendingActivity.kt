@@ -1,14 +1,19 @@
 package tech.arnav.githubtrending.ui
 
 import android.os.Bundle
+import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.commit
 import androidx.lifecycle.ViewModelProvider
+import com.google.android.material.bottomnavigation.BottomNavigationView
+import kotlinx.android.synthetic.main.activity_main.*
 import tech.arnav.githubtrending.R
-import tech.arnav.githubtrending.ui.fragments.RepositoriesFragment
+import tech.arnav.githubtrending.ui.fragments.DeveloperListFragment
+import tech.arnav.githubtrending.ui.fragments.RepositoryListFragment
 import tech.arnav.githubtrending.viewmodels.GithubTrendingViewModel
 
-class GithubTrendingActivity : AppCompatActivity() {
+class GithubTrendingActivity : AppCompatActivity(),
+    BottomNavigationView.OnNavigationItemSelectedListener {
 
     lateinit var githubTrendingViewModel: GithubTrendingViewModel
 
@@ -24,7 +29,26 @@ class GithubTrendingActivity : AppCompatActivity() {
 
 
         supportFragmentManager.commit {
-            replace(R.id.main_container, RepositoriesFragment.newInstance())
+            replace(R.id.main_container, RepositoryListFragment.newInstance())
         }
+
+        bottomNav.setOnNavigationItemSelectedListener(this)
     }
+
+    override fun onNavigationItemSelected(item: MenuItem): Boolean {
+        return when (item.itemId) {
+            R.id.menu_repositories -> RepositoryListFragment.newInstance()
+            R.id.menu_developers -> DeveloperListFragment.newInstance()
+            else -> null
+        }?.let {
+
+            supportFragmentManager.commit {
+                replace(R.id.main_container, it)
+            }
+
+            true
+        } ?: false
+    }
+
+
 }
