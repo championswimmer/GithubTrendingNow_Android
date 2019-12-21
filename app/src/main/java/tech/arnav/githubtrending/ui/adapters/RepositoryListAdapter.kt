@@ -8,6 +8,7 @@ import android.text.SpannableStringBuilder
 import android.text.style.BulletSpan
 import android.text.style.TextAppearanceSpan
 import android.view.View
+import com.bumptech.glide.Glide
 import kotlinx.android.synthetic.main.list_item_repository.view.*
 import tech.arnav.githubtrending.R
 import tech.arnav.lib.trendinggithub.models.Repository
@@ -45,5 +46,7 @@ class RepositoryListAdapter(
             )
             itemView.tvLanguage.text = lang
         }
+
+        Glide.with(itemView).load(item.avatar).into(itemView.imgAvatar)
     }
 }

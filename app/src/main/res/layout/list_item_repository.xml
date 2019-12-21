@@ -9,10 +9,8 @@
         app:cardElevation="3dp">
 
     <ImageView
+            android:layout_gravity="left|center_vertical"
             android:layout_margin="8dp"
-            android:elevation="4dp"
-            android:background="@drawable/bg_circle"
-            android:outlineProvider="background"
             android:id="@+id/imgAvatar"
             android:layout_width="48dp"
             android:layout_height="48dp"/>
