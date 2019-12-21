@@ -1,0 +1,3 @@
+include ':libTrendingGithub'
+include ':app'
+rootProject.name = "GithubTrending"
