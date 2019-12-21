@@ -8,7 +8,17 @@
         app:cardCornerRadius="5dp"
         app:cardElevation="3dp">
 
+    <ImageView
+            android:layout_margin="8dp"
+            android:elevation="4dp"
+            android:background="@drawable/bg_circle"
+            android:outlineProvider="background"
+            android:id="@+id/imgAvatar"
+            android:layout_width="48dp"
+            android:layout_height="48dp"/>
+
     <LinearLayout
+            android:layout_marginStart="64dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
@@ -16,9 +26,16 @@
 
         <TextView
                 android:id="@+id/tvRepoName"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 tools:text="repository name" />
+        <TextView
+                android:id="@+id/tvLanguage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="repository name" />
+
     </LinearLayout>
 
 </androidx.cardview.widget.CardView>
