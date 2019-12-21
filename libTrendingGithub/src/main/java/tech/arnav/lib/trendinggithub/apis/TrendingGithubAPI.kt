@@ -1,11 +1,12 @@
 package tech.arnav.lib.trendinggithub.apis
 
+import retrofit2.Response
 import retrofit2.http.GET
 import tech.arnav.lib.trendinggithub.models.Developer
 import tech.arnav.lib.trendinggithub.models.Language
 import tech.arnav.lib.trendinggithub.models.Repository
 
-interface TrendingGithubNowAPI {
+interface TrendingGithubAPI {
 
     @GET("languages")
     suspend fun getLanguages(): List<Language>
