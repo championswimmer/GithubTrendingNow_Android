@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+            android:id="@+id/menu_repositories"
+            android:icon="@drawable/ic_bottomnav_repos"
+            android:title="Repositories" />
+    <item
+            android:id="@+id/menu_developers"
+            android:icon="@drawable/ic_bottomnav_devs"
+            android:title="Developers" />
+    <item
+            android:id="@+id/menu_languages"
+            android:icon="@drawable/ic_bottomnav_langs"
+            android:title="Languages" />
+</menu>
