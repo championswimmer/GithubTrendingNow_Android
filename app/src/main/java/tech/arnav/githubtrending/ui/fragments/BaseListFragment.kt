@@ -7,8 +7,6 @@ import android.view.ViewGroup
 import androidx.annotation.LayoutRes
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import androidx.recyclerview.widget.LinearLayoutManager
-import kotlinx.android.synthetic.main.fragment_repositories.view.*
 import tech.arnav.githubtrending.ui.adapters.BaseListAdapter
 import tech.arnav.githubtrending.viewmodels.GithubTrendingViewModel
 

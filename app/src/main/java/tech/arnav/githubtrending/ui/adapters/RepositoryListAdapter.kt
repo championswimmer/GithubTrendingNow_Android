@@ -1,5 +1,6 @@
 package tech.arnav.githubtrending.ui.adapters
 
+import android.content.Intent
 import android.graphics.Color
 import android.os.Build
 import android.text.Spannable
@@ -11,6 +12,7 @@ import android.view.View
 import com.bumptech.glide.Glide
 import kotlinx.android.synthetic.main.list_item_repository.view.*
 import tech.arnav.githubtrending.R
+import tech.arnav.githubtrending.ui.RepositoryDetailsActivity
 import tech.arnav.lib.trendinggithub.models.Repository
 
 
@@ -48,5 +50,11 @@ class RepositoryListAdapter(
         }
 
         Glide.with(itemView).load(item.avatar).into(itemView.imgAvatar)
+
+        itemView.cardRepo.setOnClickListener {
+            val intent = Intent(itemView.context, RepositoryDetailsActivity::class.java)
+            intent.putExtra(RepositoryDetailsActivity.BUNDLE_KEY_REPO, item)
+            itemView.context.startActivity(intent)
+        }
     }
 }

@@ -2,32 +2,37 @@
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/cardRepo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
         app:cardCornerRadius="5dp"
         app:cardElevation="3dp">
 
     <ImageView
-            android:layout_gravity="left|center_vertical"
-            android:layout_margin="8dp"
             android:id="@+id/imgAvatar"
             android:layout_width="48dp"
-            android:layout_height="48dp"/>
+            android:layout_height="48dp"
+            android:layout_gravity="left|center_vertical"
+            android:layout_margin="8dp" />
 
     <LinearLayout
-            android:layout_marginStart="64dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginStart="64dp"
             android:orientation="vertical"
             android:padding="10dp">
 
         <TextView
                 android:id="@+id/tvRepoName"
-                android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
                 tools:text="repository name" />
+
         <TextView
                 android:id="@+id/tvLanguage"
                 android:layout_width="match_parent"
