@@ -1,0 +1,898 @@
+[
+  {
+    "author": "apple",
+    "name": "HomeKitADK",
+    "avatar": "https://github.com/apple.png",
+    "url": "https://github.com/apple/HomeKitADK",
+    "description": "",
+    "language": "C",
+    "languageColor": "#555555",
+    "stars": 1134,
+    "forks": 64,
+    "currentPeriodStars": 488,
+    "builtBy": [
+      {
+        "username": "aajain-com",
+        "href": "https://github.com/aajain-com",
+        "avatar": "https://avatars1.githubusercontent.com/u/54158616"
+      },
+      {
+        "username": "cpfister",
+        "href": "https://github.com/cpfister",
+        "avatar": "https://avatars3.githubusercontent.com/u/1516153"
+      }
+    ]
+  },
+  {
+    "author": "naptha",
+    "name": "tesseract.js",
+    "avatar": "https://github.com/naptha.png",
+    "url": "https://github.com/naptha/tesseract.js",
+    "description": "Pure Javascript OCR for more than 100 Languages 📖🎉🖥",
+    "language": "JavaScript",
+    "languageColor": "#f1e05a",
+    "stars": 18930,
+    "forks": 1281,
+    "currentPeriodStars": 651,
+    "builtBy": [
+      {
+        "username": "jeromewu",
+        "href": "https://github.com/jeromewu",
+        "avatar": "https://avatars3.githubusercontent.com/u/5723124"
+      },
+      {
+        "username": "bijection",
+        "href": "https://github.com/bijection",
+        "avatar": "https://avatars3.githubusercontent.com/u/8824442"
+      },
+      {
+        "username": "antimatter15",
+        "href": "https://github.com/antimatter15",
+        "avatar": "https://avatars2.githubusercontent.com/u/30054"
+      },
+      {
+        "username": "loderunner",
+        "href": "https://github.com/loderunner",
+        "avatar": "https://avatars0.githubusercontent.com/u/731497"
+      }
+    ]
+  },
+  {
+    "author": "xkcoding",
+    "name": "spring-boot-demo",
+    "avatar": "https://github.com/xkcoding.png",
+    "url": "https://github.com/xkcoding/spring-boot-demo",
+    "description": "spring boot demo 是一个用来深度学习并实战 spring boot 的项目，目前总共包含 63 个集成demo，已经完成 52 个。 该项目已成功集成 actuator(监控)、admin(可视化监控)、logback(日志)、aopLog(通过AOP记录web请求日志)、统一异常处理(json级别和页面级别)、freemarker(模板引擎)、thymeleaf(模板引擎)、Beetl(模板引擎)、Enjoy(模板引擎)、JdbcTemplate(通用JDBC操作数据库)、JPA(强大的ORM框架)、mybatis(强大的ORM框架)、通用Mapper(快速操作Mybatis)、PageHelper(通用的Mybatis分页插件)、mybatis-plus(快速操作M…",
+    "language": "Java",
+    "languageColor": "#b07219",
+    "stars": 8389,
+    "forks": 2817,
+    "currentPeriodStars": 354,
+    "builtBy": [
+      {
+        "username": "xkcoding",
+        "href": "https://github.com/xkcoding",
+        "avatar": "https://avatars0.githubusercontent.com/u/10429917"
+      },
+      {
+        "username": "fxbin",
+        "href": "https://github.com/fxbin",
+        "avatar": "https://avatars3.githubusercontent.com/u/29231515"
+      },
+      {
+        "username": "76peter",
+        "href": "https://github.com/76peter",
+        "avatar": "https://avatars3.githubusercontent.com/u/26475878"
+      },
+      {
+        "username": "taffier",
+        "href": "https://github.com/taffier",
+        "avatar": "https://avatars1.githubusercontent.com/u/26217310"
+      },
+      {
+        "username": "yidasanqian",
+        "href": "https://github.com/yidasanqian",
+        "avatar": "https://avatars0.githubusercontent.com/u/10655188"
+      }
+    ]
+  },
+  {
+    "author": "chinese-poetry",
+    "name": "chinese-poetry",
+    "avatar": "https://github.com/chinese-poetry.png",
+    "url": "https://github.com/chinese-poetry/chinese-poetry",
+    "description": "The most comprehensive database of Chinese poetry 🧶最全中华古诗词数据库, 唐宋两朝近一万四千古诗人, 接近5.5万首唐诗加26万宋诗. 两宋时期1564位词人，21050首词。",
+    "language": "JavaScript",
+    "languageColor": "#f1e05a",
+    "stars": 21931,
+    "forks": 4064,
+    "currentPeriodStars": 389,
+    "builtBy": [
+      {
+        "username": "jackeyGao",
+        "href": "https://github.com/jackeyGao",
+        "avatar": "https://avatars0.githubusercontent.com/u/2869650"
+      },
+      {
+        "username": "animalize",
+        "href": "https://github.com/animalize",
+        "avatar": "https://avatars2.githubusercontent.com/u/11244865"
+      },
+      {
+        "username": "FleetingWang",
+        "href": "https://github.com/FleetingWang",
+        "avatar": "https://avatars1.githubusercontent.com/u/5262141"
+      },
+      {
+        "username": "O70",
+        "href": "https://github.com/O70",
+        "avatar": "https://avatars1.githubusercontent.com/u/19946794"
+      },
+      {
+        "username": "smilevent",
+        "href": "https://github.com/smilevent",
+        "avatar": "https://avatars3.githubusercontent.com/u/11004456"
+      }
+    ]
+  },
+  {
+    "author": "eriklindernoren",
+    "name": "ML-From-Scratch",
+    "avatar": "https://github.com/eriklindernoren.png",
+    "url": "https://github.com/eriklindernoren/ML-From-Scratch",
+    "description": "Machine Learning From Scratch. Bare bones NumPy implementations of machine learning models and algorithms with a focus on accessibility. Aims to cover everything from linear regression to deep learning.",
+    "language": "Python",
+    "languageColor": "#3572A5",
+    "stars": 14508,
+    "forks": 2722,
+    "currentPeriodStars": 227,
+    "builtBy": [
+      {
+        "username": "eriklindernoren",
+        "href": "https://github.com/eriklindernoren",
+        "avatar": "https://avatars2.githubusercontent.com/u/7977505"
+      },
+      {
+        "username": "DandilionLau",
+        "href": "https://github.com/DandilionLau",
+        "avatar": "https://avatars2.githubusercontent.com/u/19463356"
+      },
+      {
+        "username": "daviddwlee84",
+        "href": "https://github.com/daviddwlee84",
+        "avatar": "https://avatars1.githubusercontent.com/u/1515662"
+      },
+      {
+        "username": "miku",
+        "href": "https://github.com/miku",
+        "avatar": "https://avatars1.githubusercontent.com/u/53705"
+      },
+      {
+        "username": "tsvuongnq",
+        "href": "https://github.com/tsvuongnq",
+        "avatar": "https://avatars3.githubusercontent.com/u/40425752"
+      }
+    ]
+  },
+  {
+    "author": "momotech",
+    "name": "MLN",
+    "avatar": "https://github.com/momotech.png",
+    "url": "https://github.com/momotech/MLN",
+    "description": "高性能、小巧、易上手的移动跨平台开发框架. A framework for building Mobile cross-platform apps with Lua",
+    "language": "C",
+    "languageColor": "#555555",
+    "stars": 340,
+    "forks": 31,
+    "currentPeriodStars": 112,
+    "builtBy": [
+      {
+        "username": "dingpuyu",
+        "href": "https://github.com/dingpuyu",
+        "avatar": "https://avatars2.githubusercontent.com/u/8564180"
+      },
+      {
+        "username": "yafengxn",
+        "href": "https://github.com/yafengxn",
+        "avatar": "https://avatars3.githubusercontent.com/u/4230288"
+      },
+      {
+        "username": "Tamerlx",
+        "href": "https://github.com/Tamerlx",
+        "avatar": "https://avatars3.githubusercontent.com/u/13927346"
+      },
+      {
+        "username": "yp-mon",
+        "href": "https://github.com/yp-mon",
+        "avatar": "https://avatars0.githubusercontent.com/u/40198159"
+      },
+      {
+        "username": "xuwhale6",
+        "href": "https://github.com/xuwhale6",
+        "avatar": "https://avatars1.githubusercontent.com/u/53332817"
+      }
+    ]
+  },
+  {
+    "author": "microsoft",
+    "name": "ai-edu",
+    "avatar": "https://github.com/microsoft.png",
+    "url": "https://github.com/microsoft/ai-edu",
+    "description": "AI education materials for Chinese students, teachers and IT professionals.",
+    "language": "Jupyter Notebook",
+    "languageColor": "#DA5B0B",
+    "stars": 6754,
+    "forks": 1412,
+    "currentPeriodStars": 207,
+    "builtBy": [
+      {
+        "username": "xiaowuhu",
+        "href": "https://github.com/xiaowuhu",
+        "avatar": "https://avatars0.githubusercontent.com/u/19218188"
+      },
+      {
+        "username": "lillzhen",
+        "href": "https://github.com/lillzhen",
+        "avatar": "https://avatars1.githubusercontent.com/u/38806028"
+      },
+      {
+        "username": "mslichao",
+        "href": "https://github.com/mslichao",
+        "avatar": "https://avatars2.githubusercontent.com/u/40487035"
+      },
+      {
+        "username": "chelxom",
+        "href": "https://github.com/chelxom",
+        "avatar": "https://avatars3.githubusercontent.com/u/13173028"
+      },
+      {
+        "username": "Annbless",
+        "href": "https://github.com/Annbless",
+        "avatar": "https://avatars1.githubusercontent.com/u/32097042"
+      }
+    ]
+  },
+  {
+    "author": "luoxue-victor",
+    "name": "webpack-box",
+    "avatar": "https://github.com/luoxue-victor.png",
+    "url": "https://github.com/luoxue-victor/webpack-box",
+    "description": "我有一个梦想，就是将所有webpack相关的最佳实践都集成在这里，本项目长期维护/更新，有兴趣的同学可以一起成为维护者。issue下面TODO标签是接下来要做的事情，欢迎所有人都可以来提，让我们共创 webpack 工厂！",
+    "language": "JavaScript",
+    "languageColor": "#f1e05a",
+    "stars": 943,
+    "forks": 115,
+    "currentPeriodStars": 384,
+    "builtBy": [
+      {
+        "username": "luoxue-victor",
+        "href": "https://github.com/luoxue-victor",
+        "avatar": "https://avatars3.githubusercontent.com/u/25242102"
+      },
+      {
+        "username": "chenguzhen87",
+        "href": "https://github.com/chenguzhen87",
+        "avatar": "https://avatars0.githubusercontent.com/u/28331609"
+      }
+    ]
+  },
+  {
+    "author": "sveltejs",
+    "name": "svelte",
+    "avatar": "https://github.com/sveltejs.png",
+    "url": "https://github.com/sveltejs/svelte",
+    "description": "Cybernetically enhanced web apps",
+    "language": "JavaScript",
+    "languageColor": "#f1e05a",
+    "stars": 28102,
+    "forks": 1229,
+    "currentPeriodStars": 226,
+    "builtBy": [
+      {
+        "username": "Rich-Harris",
+        "href": "https://github.com/Rich-Harris",
+        "avatar": "https://avatars0.githubusercontent.com/u/1162160"
+      },
+      {
+        "username": "Conduitry",
+        "href": "https://github.com/Conduitry",
+        "avatar": "https://avatars2.githubusercontent.com/u/16696352"
+      },
+      {
+        "username": "tanhauhau",
+        "href": "https://github.com/tanhauhau",
+        "avatar": "https://avatars0.githubusercontent.com/u/2338632"
+      },
+      {
+        "username": "Swatinem",
+        "href": "https://github.com/Swatinem",
+        "avatar": "https://avatars1.githubusercontent.com/u/580492"
+      },
+      {
+        "username": "jacwright",
+        "href": "https://github.com/jacwright",
+        "avatar": "https://avatars2.githubusercontent.com/u/120294"
+      }
+    ]
+  },
+  {
+    "author": "testerSunshine",
+    "name": "12306",
+    "avatar": "https://github.com/testerSunshine.png",
+    "url": "https://github.com/testerSunshine/12306",
+    "description": "12306智能刷票，订票",
+    "language": "Python",
+    "languageColor": "#3572A5",
+    "stars": 20337,
+    "forks": 6418,
+    "currentPeriodStars": 538,
+    "builtBy": [
+      {
+        "username": "testerSunshine",
+        "href": "https://github.com/testerSunshine",
+        "avatar": "https://avatars3.githubusercontent.com/u/20162049"
+      },
+      {
+        "username": "MonsterTan",
+        "href": "https://github.com/MonsterTan",
+        "avatar": "https://avatars1.githubusercontent.com/u/22610809"
+      },
+      {
+        "username": "cclauss",
+        "href": "https://github.com/cclauss",
+        "avatar": "https://avatars3.githubusercontent.com/u/3709715"
+      },
+      {
+        "username": "stormeyes",
+        "href": "https://github.com/stormeyes",
+        "avatar": "https://avatars3.githubusercontent.com/u/5072174"
+      },
+      {
+        "username": "BlancRay",
+        "href": "https://github.com/BlancRay",
+        "avatar": "https://avatars1.githubusercontent.com/u/9410067"
+      }
+    ]
+  },
+  {
+    "author": "for-GET",
+    "name": "http-decision-diagram",
+    "avatar": "https://github.com/for-GET.png",
+    "url": "https://github.com/for-GET/http-decision-diagram",
+    "description": "An activity diagram to describe the resolution of HTTP response status codes, given various headers.",
+    "language": "JavaScript",
+    "languageColor": "#f1e05a",
+    "stars": 2131,
+    "forks": 113,
+    "currentPeriodStars": 279,
+    "builtBy": [
+      {
+        "username": "andreineculau",
+        "href": "https://github.com/andreineculau",
+        "avatar": "https://avatars2.githubusercontent.com/u/708161"
+      },
+      {
+        "username": "liyishuai",
+        "href": "https://github.com/liyishuai",
+        "avatar": "https://avatars2.githubusercontent.com/u/7020805"
+      }
+    ]
+  },
+  {
+    "author": "lemire",
+    "name": "simdjson",
+    "avatar": "https://github.com/lemire.png",
+    "url": "https://github.com/lemire/simdjson",
+    "description": "Parsing gigabytes of JSON per second",
+    "language": "C++",
+    "languageColor": "#f34b7d",
+    "stars": 7891,
+    "forks": 438,
+    "currentPeriodStars": 18,
+    "builtBy": [
+      {
+        "username": "lemire",
+        "href": "https://github.com/lemire",
+        "avatar": "https://avatars2.githubusercontent.com/u/391987"
+      },
+      {
+        "username": "geofflangdale",
+        "href": "https://github.com/geofflangdale",
+        "avatar": "https://avatars3.githubusercontent.com/u/37128715"
+      },
+      {
+        "username": "jkeiser",
+        "href": "https://github.com/jkeiser",
+        "avatar": "https://avatars0.githubusercontent.com/u/654882"
+      },
+      {
+        "username": "ioioioio",
+        "href": "https://github.com/ioioioio",
+        "avatar": "https://avatars0.githubusercontent.com/u/26575562"
+      },
+      {
+        "username": "pauldreik",
+        "href": "https://github.com/pauldreik",
+        "avatar": "https://avatars1.githubusercontent.com/u/3541498"
+      }
+    ]
+  },
+  {
+    "author": "vapor",
+    "name": "vapor",
+    "avatar": "https://github.com/vapor.png",
+    "url": "https://github.com/vapor/vapor",
+    "description": "💧 A server-side Swift web framework.",
+    "language": "Swift",
+    "languageColor": "#ffac45",
+    "stars": 17706,
+    "forks": 1050,
+    "currentPeriodStars": 38,
+    "builtBy": [
+      {
+        "username": "tanner0101",
+        "href": "https://github.com/tanner0101",
+        "avatar": "https://avatars1.githubusercontent.com/u/1342803"
+      },
+      {
+        "username": "loganwright",
+        "href": "https://github.com/loganwright",
+        "avatar": "https://avatars1.githubusercontent.com/u/5750489"
+      },
+      {
+        "username": "Joannis",
+        "href": "https://github.com/Joannis",
+        "avatar": "https://avatars3.githubusercontent.com/u/1951674"
+      },
+      {
+        "username": "shnhrrsn",
+        "href": "https://github.com/shnhrrsn",
+        "avatar": "https://avatars2.githubusercontent.com/u/42901"
+      },
+      {
+        "username": "ketzusaka",
+        "href": "https://github.com/ketzusaka",
+        "avatar": "https://avatars3.githubusercontent.com/u/1353840"
+      }
+    ]
+  },
+  {
+    "author": "microsoft",
+    "name": "vscode",
+    "avatar": "https://github.com/microsoft.png",
+    "url": "https://github.com/microsoft/vscode",
+    "description": "Visual Studio Code",
+    "language": "TypeScript",
+    "languageColor": "#2b7489",
+    "stars": 88963,
+    "forks": 13395,
+    "currentPeriodStars": 133,
+    "builtBy": [
+      {
+        "username": "bpasero",
+        "href": "https://github.com/bpasero",
+        "avatar": "https://avatars1.githubusercontent.com/u/900690"
+      },
+      {
+        "username": "joaomoreno",
+        "href": "https://github.com/joaomoreno",
+        "avatar": "https://avatars1.githubusercontent.com/u/22350"
+      },
+      {
+        "username": "jrieken",
+        "href": "https://github.com/jrieken",
+        "avatar": "https://avatars2.githubusercontent.com/u/1794099"
+      },
+      {
+        "username": "isidorn",
+        "href": "https://github.com/isidorn",
+        "avatar": "https://avatars1.githubusercontent.com/u/1926584"
+      },
+      {
+        "username": "mjbvz",
+        "href": "https://github.com/mjbvz",
+        "avatar": "https://avatars2.githubusercontent.com/u/12821956"
+      }
+    ]
+  },
+  {
+    "author": "goldbergyoni",
+    "name": "javascript-testing-best-practices",
+    "avatar": "https://github.com/goldbergyoni.png",
+    "url": "https://github.com/goldbergyoni/javascript-testing-best-practices",
+    "description": "📗🌐 🚢 Comprehensive and exhaustive JavaScript & Node.js testing best practices (August 2019)",
+    "stars": 6664,
+    "forks": 450,
+    "currentPeriodStars": 67,
+    "builtBy": [
+      {
+        "username": "goldbergyoni",
+        "href": "https://github.com/goldbergyoni",
+        "avatar": "https://avatars1.githubusercontent.com/u/8571500"
+      },
+      {
+        "username": "js-kyle",
+        "href": "https://github.com/js-kyle",
+        "avatar": "https://avatars0.githubusercontent.com/u/23022619"
+      },
+      {
+        "username": "ragubyun",
+        "href": "https://github.com/ragubyun",
+        "avatar": "https://avatars3.githubusercontent.com/u/10918951"
+      },
+      {
+        "username": "Franciscahase",
+        "href": "https://github.com/Franciscahase",
+        "avatar": "https://avatars3.githubusercontent.com/u/48793198"
+      }
+    ]
+  },
+  {
+    "author": "alpinejs",
+    "name": "alpine",
+    "avatar": "https://github.com/alpinejs.png",
+    "url": "https://github.com/alpinejs/alpine",
+    "description": "A rugged, minimal framework for composing JavaScript behavior in your markup.",
+    "language": "JavaScript",
+    "languageColor": "#f1e05a",
+    "stars": 838,
+    "forks": 39,
+    "currentPeriodStars": 70,
+    "builtBy": [
+      {
+        "username": "calebporzio",
+        "href": "https://github.com/calebporzio",
+        "avatar": "https://avatars3.githubusercontent.com/u/3670578"
+      },
+      {
+        "username": "dmitrybubyakin",
+        "href": "https://github.com/dmitrybubyakin",
+        "avatar": "https://avatars0.githubusercontent.com/u/11477505"
+      },
+      {
+        "username": "mhanberg",
+        "href": "https://github.com/mhanberg",
+        "avatar": "https://avatars0.githubusercontent.com/u/5523984"
+      },
+      {
+        "username": "ErickZH",
+        "href": "https://github.com/ErickZH",
+        "avatar": "https://avatars1.githubusercontent.com/u/14044588"
+      },
+      {
+        "username": "tlgreg",
+        "href": "https://github.com/tlgreg",
+        "avatar": "https://avatars2.githubusercontent.com/u/666791"
+      }
+    ]
+  },
+  {
+    "author": "rubocop-hq",
+    "name": "rubocop",
+    "avatar": "https://github.com/rubocop-hq.png",
+    "url": "https://github.com/rubocop-hq/rubocop",
+    "description": "A Ruby static code analyzer and formatter, based on the community Ruby style guide.",
+    "language": "Ruby",
+    "languageColor": "#701516",
+    "stars": 10473,
+    "forks": 2251,
+    "currentPeriodStars": 13,
+    "builtBy": [
+      {
+        "username": "bbatsov",
+        "href": "https://github.com/bbatsov",
+        "avatar": "https://avatars3.githubusercontent.com/u/103882"
+      },
+      {
+        "username": "jonas054",
+        "href": "https://github.com/jonas054",
+        "avatar": "https://avatars2.githubusercontent.com/u/336720"
+      },
+      {
+        "username": "koic",
+        "href": "https://github.com/koic",
+        "avatar": "https://avatars1.githubusercontent.com/u/13203"
+      },
+      {
+        "username": "Drenmi",
+        "href": "https://github.com/Drenmi",
+        "avatar": "https://avatars2.githubusercontent.com/u/5259935"
+      },
+      {
+        "username": "alexdowad",
+        "href": "https://github.com/alexdowad",
+        "avatar": "https://avatars3.githubusercontent.com/u/1067359"
+      }
+    ]
+  },
+  {
+    "author": "mapbox",
+    "name": "mapbox-gl-js",
+    "avatar": "https://github.com/mapbox.png",
+    "url": "https://github.com/mapbox/mapbox-gl-js",
+    "description": "Interactive, thoroughly customizable maps in the browser, powered by vector tiles and WebGL",
+    "language": "JavaScript",
+    "languageColor": "#f1e05a",
+    "stars": 5489,
+    "forks": 1258,
+    "currentPeriodStars": 23,
+    "builtBy": [
+      {
+        "username": "jfirebaugh",
+        "href": "https://github.com/jfirebaugh",
+        "avatar": "https://avatars2.githubusercontent.com/u/98601"
+      },
+      {
+        "username": "ansis",
+        "href": "https://github.com/ansis",
+        "avatar": "https://avatars1.githubusercontent.com/u/1421652"
+      },
+      {
+        "username": "mourner",
+        "href": "https://github.com/mourner",
+        "avatar": "https://avatars2.githubusercontent.com/u/25395"
+      },
+      {
+        "username": "kkaefer",
+        "href": "https://github.com/kkaefer",
+        "avatar": "https://avatars0.githubusercontent.com/u/52399"
+      },
+      {
+        "username": "tmcw",
+        "href": "https://github.com/tmcw",
+        "avatar": "https://avatars3.githubusercontent.com/u/32314"
+      }
+    ]
+  },
+  {
+    "author": "dotnet",
+    "name": "csharplang",
+    "avatar": "https://github.com/dotnet.png",
+    "url": "https://github.com/dotnet/csharplang",
+    "description": "The official repo for the design of the C# programming language",
+    "language": "C#",
+    "languageColor": "#178600",
+    "stars": 5087,
+    "forks": 566,
+    "currentPeriodStars": 10,
+    "builtBy": [
+      {
+        "username": "MadsTorgersen",
+        "href": "https://github.com/MadsTorgersen",
+        "avatar": "https://avatars3.githubusercontent.com/u/6677272"
+      },
+      {
+        "username": "gafter",
+        "href": "https://github.com/gafter",
+        "avatar": "https://avatars2.githubusercontent.com/u/3804346"
+      },
+      {
+        "username": "jcouv",
+        "href": "https://github.com/jcouv",
+        "avatar": "https://avatars0.githubusercontent.com/u/12466233"
+      },
+      {
+        "username": "agocke",
+        "href": "https://github.com/agocke",
+        "avatar": "https://avatars3.githubusercontent.com/u/515774"
+      },
+      {
+        "username": "jaredpar",
+        "href": "https://github.com/jaredpar",
+        "avatar": "https://avatars2.githubusercontent.com/u/146967"
+      }
+    ]
+  },
+  {
+    "author": "myliang",
+    "name": "x-spreadsheet",
+    "avatar": "https://github.com/myliang.png",
+    "url": "https://github.com/myliang/x-spreadsheet",
+    "description": "A web-based JavaScript（canvas） spreadsheet",
+    "language": "JavaScript",
+    "languageColor": "#f1e05a",
+    "stars": 7387,
+    "forks": 645,
+    "currentPeriodStars": 249,
+    "builtBy": [
+      {
+        "username": "myliang",
+        "href": "https://github.com/myliang",
+        "avatar": "https://avatars2.githubusercontent.com/u/718858"
+      },
+      {
+        "username": "anandksalien",
+        "href": "https://github.com/anandksalien",
+        "avatar": "https://avatars2.githubusercontent.com/u/46891412"
+      },
+      {
+        "username": "Jonham",
+        "href": "https://github.com/Jonham",
+        "avatar": "https://avatars3.githubusercontent.com/u/8164116"
+      },
+      {
+        "username": "div5yesh",
+        "href": "https://github.com/div5yesh",
+        "avatar": "https://avatars1.githubusercontent.com/u/12038180"
+      },
+      {
+        "username": "vincentloos",
+        "href": "https://github.com/vincentloos",
+        "avatar": "https://avatars1.githubusercontent.com/u/38402151"
+      }
+    ]
+  },
+  {
+    "author": "ocornut",
+    "name": "imgui",
+    "avatar": "https://github.com/ocornut.png",
+    "url": "https://github.com/ocornut/imgui",
+    "description": "Dear ImGui: Bloat-free Immediate Mode Graphical User interface for C++ with minimal dependencies",
+    "language": "C++",
+    "languageColor": "#f34b7d",
+    "stars": 18094,
+    "forks": 2879,
+    "currentPeriodStars": 33,
+    "builtBy": [
+      {
+        "username": "ocornut",
+        "href": "https://github.com/ocornut",
+        "avatar": "https://avatars3.githubusercontent.com/u/8225057"
+      },
+      {
+        "username": "rokups",
+        "href": "https://github.com/rokups",
+        "avatar": "https://avatars1.githubusercontent.com/u/19151258"
+      },
+      {
+        "username": "bkaradzic",
+        "href": "https://github.com/bkaradzic",
+        "avatar": "https://avatars1.githubusercontent.com/u/814772"
+      },
+      {
+        "username": "septag",
+        "href": "https://github.com/septag",
+        "avatar": "https://avatars3.githubusercontent.com/u/5081921"
+      },
+      {
+        "username": "waywardmonkeys",
+        "href": "https://github.com/waywardmonkeys",
+        "avatar": "https://avatars2.githubusercontent.com/u/178582"
+      }
+    ]
+  },
+  {
+    "author": "haizlin",
+    "name": "fe-interview",
+    "avatar": "https://github.com/haizlin.png",
+    "url": "https://github.com/haizlin/fe-interview",
+    "description": "前端面试每日 3+1，以面试题来驱动学习，提倡每日学习与思考，每天进步一点！每天早上5点纯手工发布面试题（死磕自己，愉悦大家）",
+    "language": "JavaScript",
+    "languageColor": "#f1e05a",
+    "stars": 8878,
+    "forks": 1074,
+    "currentPeriodStars": 46,
+    "builtBy": [
+      {
+        "username": "haizhilin2013",
+        "href": "https://github.com/haizhilin2013",
+        "avatar": "https://avatars0.githubusercontent.com/u/5070345"
+      },
+      {
+        "username": "AnsonZnl",
+        "href": "https://github.com/AnsonZnl",
+        "avatar": "https://avatars3.githubusercontent.com/u/29278068"
+      },
+      {
+        "username": "xiangshuo1992",
+        "href": "https://github.com/xiangshuo1992",
+        "avatar": "https://avatars2.githubusercontent.com/u/21164035"
+      },
+      {
+        "username": "hiyangguo",
+        "href": "https://github.com/hiyangguo",
+        "avatar": "https://avatars1.githubusercontent.com/u/15609339"
+      },
+      {
+        "username": "undefinedYu",
+        "href": "https://github.com/undefinedYu",
+        "avatar": "https://avatars2.githubusercontent.com/u/38064049"
+      }
+    ]
+  },
+  {
+    "author": "apache",
+    "name": "beam",
+    "avatar": "https://github.com/apache.png",
+    "url": "https://github.com/apache/beam",
+    "description": "Apache Beam",
+    "language": "Java",
+    "languageColor": "#b07219",
+    "stars": 3582,
+    "forks": 2220,
+    "currentPeriodStars": 7,
+    "builtBy": [
+      {
+        "username": "kennknowles",
+        "href": "https://github.com/kennknowles",
+        "avatar": "https://avatars2.githubusercontent.com/u/575353"
+      },
+      {
+        "username": "lukecwik",
+        "href": "https://github.com/lukecwik",
+        "avatar": "https://avatars3.githubusercontent.com/u/10078956"
+      },
+      {
+        "username": "robertwb",
+        "href": "https://github.com/robertwb",
+        "avatar": "https://avatars2.githubusercontent.com/u/486017"
+      },
+      {
+        "username": "tgroh",
+        "href": "https://github.com/tgroh",
+        "avatar": "https://avatars3.githubusercontent.com/u/429866"
+      },
+      {
+        "username": "aaltay",
+        "href": "https://github.com/aaltay",
+        "avatar": "https://avatars1.githubusercontent.com/u/696638"
+      }
+    ]
+  },
+  {
+    "author": "ZhongFuCheng3y",
+    "name": "3y",
+    "avatar": "https://github.com/ZhongFuCheng3y.png",
+    "url": "https://github.com/ZhongFuCheng3y/3y",
+    "description": "📓从Java基础、JavaWeb基础到常用的框架再到面试题都有完整的教程，几乎涵盖了Java后端必备的知识点",
+    "stars": 4309,
+    "forks": 1005,
+    "currentPeriodStars": 107,
+    "builtBy": [
+      {
+        "username": "ZhongFuCheng3y",
+        "href": "https://github.com/ZhongFuCheng3y",
+        "avatar": "https://avatars2.githubusercontent.com/u/33118128"
+      }
+    ]
+  },
+  {
+    "author": "awesome-selfhosted",
+    "name": "awesome-selfhosted",
+    "avatar": "https://github.com/awesome-selfhosted.png",
+    "url": "https://github.com/awesome-selfhosted/awesome-selfhosted",
+    "description": "A list of Free Software network services and web applications which can be hosted locally. Selfhosting is the process of hosting and managing applications instead of renting from Software-as-a-Service providers",
+    "language": "JavaScript",
+    "languageColor": "#f1e05a",
+    "stars": 39519,
+    "forks": 3117,
+    "currentPeriodStars": 97,
+    "builtBy": [
+      {
+        "username": "nodiscc",
+        "href": "https://github.com/nodiscc",
+        "avatar": "https://avatars1.githubusercontent.com/u/3950390"
+      },
+      {
+        "username": "Kickball",
+        "href": "https://github.com/Kickball",
+        "avatar": "https://avatars2.githubusercontent.com/u/2252004"
+      },
+      {
+        "username": "n8225",
+        "href": "https://github.com/n8225",
+        "avatar": "https://avatars2.githubusercontent.com/u/2222479"
+      },
+      {
+        "username": "meitar",
+        "href": "https://github.com/meitar",
+        "avatar": "https://avatars0.githubusercontent.com/u/18677"
+      },
+      {
+        "username": "cavebeat",
+        "href": "https://github.com/cavebeat",
+        "avatar": "https://avatars3.githubusercontent.com/u/2369441"
+      }
+    ]
+  }
+]
