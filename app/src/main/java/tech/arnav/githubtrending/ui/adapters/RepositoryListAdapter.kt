@@ -1,18 +1,12 @@
 package tech.arnav.githubtrending.ui.adapters
 
 import android.content.Intent
-import android.graphics.Color
-import android.os.Build
-import android.text.Spannable
-import android.text.SpannableString
-import android.text.SpannableStringBuilder
-import android.text.style.BulletSpan
-import android.text.style.TextAppearanceSpan
 import android.view.View
 import com.bumptech.glide.Glide
 import kotlinx.android.synthetic.main.list_item_repository.view.*
-import tech.arnav.githubtrending.R
 import tech.arnav.githubtrending.ui.RepositoryDetailsActivity
+import tech.arnav.githubtrending.ui.textspannables.SpannableLanguage
+import tech.arnav.githubtrending.ui.textspannables.SpannableRepoName
 import tech.arnav.lib.trendinggithub.models.Repository
 
 
@@ -23,30 +17,11 @@ class RepositoryListAdapter(
     BaseListAdapter<Repository>(layoutId, bindView) {
 
     override fun baseBindView(itemView: View, item: Repository) {
-        val repoName = SpannableString("${item.author} / ${item.name}")
-        repoName.setSpan(
-            TextAppearanceSpan(itemView.context, R.style.TextAppearance_MaterialComponents_Headline6),
-            repoName.indexOfFirst { it == '/' },
-            repoName.length,
-            Spannable.SPAN_EXCLUSIVE_EXCLUSIVE
-        )
-        itemView.tvRepoName.text = repoName
+        itemView.tvRepoName.text =
+            SpannableRepoName(itemView.context, "${item.author} / ${item.name}")
 
         item.language?.let {
-            val lang = SpannableString(it)
-
-            val langBullet = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
-                BulletSpan(4, Color.parseColor(item.languageColor), 10)
-            } else {
-                BulletSpan(4, Color.parseColor(item.languageColor))
-            }
-
-            lang.setSpan(
-                langBullet,
-                0 , 0,
-                Spannable.SPAN_MARK_MARK
-            )
-            itemView.tvLanguage.text = lang
+            itemView.tvLanguage.text = SpannableLanguage(it, item.languageColor)
         }
 
         Glide.with(itemView).load(item.avatar).into(itemView.imgAvatar)

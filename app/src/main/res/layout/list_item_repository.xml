@@ -13,6 +13,7 @@
         app:cardElevation="3dp">
 
     <ImageView
+            tools:src="@drawable/ic_bottomnav_repos"
             android:id="@+id/imgAvatar"
             android:layout_width="48dp"
             android:layout_height="48dp"
@@ -31,13 +32,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
-                tools:text="repository name" />
+                tools:text="org / repo" />
 
         <TextView
                 android:id="@+id/tvLanguage"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                tools:text="repository name" />
+                tools:text="🔴 Language" />
 
     </LinearLayout>
 
