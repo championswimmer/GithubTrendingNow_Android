@@ -1,0 +1,50 @@
+[
+  {
+    "username": "johanneskoester",
+    "name": "Johannes Köster",
+    "type": "user",
+    "url": "https://github.com/johanneskoester",
+    "avatar": "https://avatars1.githubusercontent.com/u/1858646",
+    "repo": {
+      "name": "alpaca",
+      "description": "ALPACA is a caller for genomic variants (single nucleotide and small indels) from next-generation sequencing data that uses a novel algebraic approach to incorporate sample based filtering into the calling. This allows to intuitively control the FDR for arbitrary filtering scenarios.",
+      "url": "https://github.com/johanneskoester/alpaca"
+    }
+  },
+  {
+    "username": "plouc",
+    "name": "Raphaël Benitte",
+    "type": "user",
+    "url": "https://github.com/plouc",
+    "avatar": "https://avatars0.githubusercontent.com/u/501642",
+    "repo": {
+      "name": "nivo",
+      "description": "nivo provides a rich set of dataviz components, built on top of the awesome d3 and Reactjs libraries",
+      "url": "https://github.com/plouc/nivo"
+    }
+  },
+  {
+    "username": "seanmonstar",
+    "name": "Sean McArthur",
+    "type": "user",
+    "url": "https://github.com/seanmonstar",
+    "avatar": "https://avatars1.githubusercontent.com/u/51479",
+    "repo": {
+      "name": "reqwest",
+      "description": "An easy and powerful Rust HTTP Client",
+      "url": "https://github.com/seanmonstar/reqwest"
+    }
+  },
+  {
+    "username": "mlocati",
+    "name": "Michele Locati",
+    "type": "user",
+    "url": "https://github.com/mlocati",
+    "avatar": "https://avatars2.githubusercontent.com/u/928116",
+    "repo": {
+      "name": "docker-php-extension-installer",
+      "description": "Easily install PHP extension in Docker containers",
+      "url": "https://github.com/mlocati/docker-php-extension-installer"
+    }
+  }
+]

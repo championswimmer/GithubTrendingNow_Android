@@ -12,9 +12,7 @@
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
         <activity android:name=".ui.RepositoryDetailsActivity"></activity>
-        <activity
-                android:name=".ui.Main2Activity"
-                android:label="@string/title_activity_main2" />
+
         <activity android:name=".ui.GithubTrendingActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

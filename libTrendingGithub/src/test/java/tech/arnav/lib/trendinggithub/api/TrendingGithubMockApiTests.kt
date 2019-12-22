@@ -12,9 +12,9 @@ class TrendingGithubMockApiTests {
 
 
     @Test
-    fun `GET languages`() {
+    fun get_languages() {
         runBlocking {
-            val langResp = TestUtils.readJson("responses/languages.json")
+            val langResp = TestUtils.readJson("assets/languages.json")
             TrendingGithubMock.mockWebServer.enqueue(MockResponse().setBody(langResp))
 
             val languages = TrendingGithubMock.api.getLanguages()
@@ -26,9 +26,9 @@ class TrendingGithubMockApiTests {
     }
 
     @Test
-    fun `GET repositories`() {
+    fun get_repositories() {
         runBlocking {
-            val repoResp = TestUtils.readJson("responses/repositories.json")
+            val repoResp = TestUtils.readJson("assets/repositories.json")
             TrendingGithubMock.mockWebServer.enqueue(MockResponse().setBody(repoResp))
             val repositories = TrendingGithubMock.api.getRepositories()
 
@@ -37,9 +37,9 @@ class TrendingGithubMockApiTests {
     }
 
     @Test
-    fun `GET developers`() {
+    fun get_developers() {
         runBlocking {
-            val devResp = TestUtils.readJson("responses/developers.json")
+            val devResp = TestUtils.readJson("assets/developers.json")
             TrendingGithubMock.mockWebServer.enqueue(MockResponse().setBody(devResp))
             val developers = TrendingGithubMock.api.getDevelopers()
 

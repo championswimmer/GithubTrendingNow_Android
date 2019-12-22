@@ -7,7 +7,7 @@ import tech.arnav.lib.trendinggithub.TrendingGithub
 class TrendingGithubApiTests {
 
     @Test
-    fun `GET languages`() {
+    fun get_languages() {
         runBlocking {
             val languages = TrendingGithub.api.getLanguages()
 
@@ -16,7 +16,7 @@ class TrendingGithubApiTests {
     }
 
     @Test
-    fun `GET repositories`() {
+    fun get_repositories() {
         runBlocking {
             val repositories = TrendingGithub.api.getRepositories()
 
@@ -25,7 +25,7 @@ class TrendingGithubApiTests {
     }
 
     @Test
-    fun `GET developers`() {
+    fun get_developers() {
         runBlocking {
             val developers = TrendingGithub.api.getDevelopers()
 
