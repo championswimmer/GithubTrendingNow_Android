@@ -13,11 +13,19 @@ data class Developer(
     @Json(name = "url") val url: String,
     @Json(name = "avatar") val avatar: String,
     @Json(name = "repo") val repo: Repo
-): Serializable {
+): Serializable, BaseModel {
+    override var id: String
+        get() = username
+        set(value) {}
+
     @JsonClass(generateAdapter = true)
     data class Repo(
         @Json(name = "name") val name: String,
         @Json(name = "description") val description: String,
         @Json(name = "url") val url: String
-    ): Serializable
+    ): Serializable, BaseModel {
+        override var id: String
+            get() = url
+            set(value) {}
+    }
 }

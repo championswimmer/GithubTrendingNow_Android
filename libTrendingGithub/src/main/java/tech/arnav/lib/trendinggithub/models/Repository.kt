@@ -18,11 +18,19 @@ data class Repository(
     @Json(name = "forks") val forks: Int,
     @Json(name = "currentPeriodStars") val currentPeriodStars: Int,
     @Json(name = "builtBy") val builtBy: List<Author>
-): Serializable {
+): Serializable, BaseModel {
+    override var id: String
+        get() = url
+        set(value) {}
+
     @JsonClass(generateAdapter = true)
     data class Author(
         @Json(name = "username") val username: String,
         @Json(name = "href") val href: String,
         @Json(name = "avatar") val avatar: String
-    ): Serializable
+    ): Serializable, BaseModel {
+        override var id: String
+            get() = username
+            set(value) {}
+    }
 }

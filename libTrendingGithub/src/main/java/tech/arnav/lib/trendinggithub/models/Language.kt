@@ -9,4 +9,8 @@ import java.io.Serializable
 data class Language(
     @Json(name = "urlParam") val urlParam: String,
     @Json(name = "name") val name: String
-) : Serializable
+) : Serializable, BaseModel {
+    override var id: String
+        get() = urlParam
+        set(value) {}
+}

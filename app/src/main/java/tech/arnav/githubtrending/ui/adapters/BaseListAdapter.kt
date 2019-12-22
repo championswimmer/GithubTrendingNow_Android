@@ -8,6 +8,7 @@ import androidx.annotation.LayoutRes
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
+import tech.arnav.lib.trendinggithub.models.BaseModel
 
 /**
  * @author championswimmer
@@ -18,20 +19,22 @@ import androidx.recyclerview.widget.RecyclerView
  * @param bindView (optional) layout <-> data binding function. if not provided
  *          will fall-back to using the [baseBindView] function
  */
-abstract class BaseListAdapter<T>(
+abstract class BaseListAdapter<T : BaseModel>(
     @LayoutRes val layoutId: Int,
     val bindView: ((itemView: View, item: T) -> Unit)?
 ) :
     ListAdapter<T, BaseListAdapter.BaseViewHolder>(
         object : DiffUtil.ItemCallback<T>() {
-            override fun areItemsTheSame(oldItem: T, newItem: T) = oldItem === newItem
+            override fun areItemsTheSame(oldItem: T, newItem: T) =
+                oldItem.equalsId(newItem)
 
             @SuppressLint("DiffUtilEquals")
-            override fun areContentsTheSame(oldItem: T, newItem: T) = oldItem == newItem
+            override fun areContentsTheSame(oldItem: T, newItem: T) =
+                oldItem == newItem
         }
     ) {
 
-    abstract fun baseBindView (itemView: View, item: T)
+    abstract fun baseBindView(itemView: View, item: T)
 
     class BaseViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView)
 

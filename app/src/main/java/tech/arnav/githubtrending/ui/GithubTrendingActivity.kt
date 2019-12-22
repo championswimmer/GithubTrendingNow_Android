@@ -24,9 +24,9 @@ class GithubTrendingActivity : AppCompatActivity(),
 
         githubTrendingViewModel = ViewModelProvider(this).get(GithubTrendingViewModel::class.java)
 
-        githubTrendingViewModel.refreshRepos()
-        githubTrendingViewModel.refreshDevs()
-        githubTrendingViewModel.refreshLangs()
+        githubTrendingViewModel.repoList.refresh()
+        githubTrendingViewModel.devList.refresh()
+        githubTrendingViewModel.langList.refresh()
 
 
         supportFragmentManager.commit {
