@@ -1,15 +1,14 @@
 package tech.arnav.lib.trendinggithub.apis
 
-import junit.framework.Assert.*
 import kotlinx.coroutines.runBlocking
 import okhttp3.mockwebserver.MockResponse
+import org.junit.Assert.assertEquals
+import org.junit.Assert.assertNotNull
 import org.junit.Test
 import tech.arnav.lib.trendinggithub.TestUtils
 import tech.arnav.lib.trendinggithub.TrendingGithubMock
-import java.util.concurrent.TimeUnit
 
 class TrendingGithubMockApiTests {
-
 
     @Test
     fun get_languages() {
