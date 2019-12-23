@@ -68,7 +68,7 @@ abstract class BaseListFragment<T: BaseModel> : Fragment() {
             }
             ApiResponse.Status.FAILURE -> {
                 swipeRefreshLayout.isRefreshing = false
-                Toast.makeText(activity, "Error loading data", Toast.LENGTH_SHORT).show()
+                Toast.makeText(activity, response.getErrorMessage() ?: "Error loading data", Toast.LENGTH_SHORT).show()
             }
         }
     }
