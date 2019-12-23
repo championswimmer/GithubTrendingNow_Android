@@ -56,6 +56,9 @@ abstract class BaseListFragment<T: BaseModel> : Fragment() {
 
     fun handleResponse(response: ApiResponse<List<T>>) {
         when (response.status) {
+            ApiResponse.Status.NONE -> {
+                swipeRefreshLayout.isRefreshing = false
+            }
             ApiResponse.Status.LOADING -> {
                 swipeRefreshLayout.isRefreshing = true
             }

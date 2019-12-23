@@ -6,7 +6,6 @@ import kotlinx.coroutines.runBlocking
 import okhttp3.mockwebserver.MockResponse
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertNotNull
-import org.junit.Before
 import org.junit.Test
 import tech.arnav.githubtrending.AndroidTestUtils
 import tech.arnav.githubtrending.data.ApiResponse
@@ -22,16 +21,16 @@ class GithubTrendingViewModelTest {
 
     @Test
     fun repoList_refresh_works() {
-        TrendingGithubMock.mockWebServer
         TrendingGithubMock.mockWebServer.enqueue(
             MockResponse().setBody(
                 AndroidTestUtils.readJson(context, "repositories.json")
             )
         )
         viewModel.repoList.refresh()
+        assertEquals(ApiResponse.Status.LOADING, viewModel.repoList.value?.status)
 
         runBlocking {
-            delay(2000) // wait 1 sec
+            delay(1000) // wait 1 sec
             assertNotNull(viewModel.repoList.value)
             assertEquals(ApiResponse.Status.SUCCESS, viewModel.repoList.value?.status)
         }
@@ -45,9 +44,10 @@ class GithubTrendingViewModelTest {
             )
         )
         viewModel.devList.refresh()
+        assertEquals(ApiResponse.Status.LOADING, viewModel.devList.value?.status)
 
         runBlocking {
-            delay(2000) // wait 1 sec
+            delay(1000) // wait 1 sec
             assertNotNull(viewModel.devList.value)
             assertEquals(ApiResponse.Status.SUCCESS, viewModel.devList.value?.status)
         }
@@ -61,8 +61,10 @@ class GithubTrendingViewModelTest {
             )
         )
         viewModel.langList.refresh()
+        assertEquals(ApiResponse.Status.LOADING, viewModel.langList.value?.status)
+
         runBlocking {
-            delay(2000) // wait 1 sec
+            delay(1000) // wait 1 sec
             assertNotNull(viewModel.langList.value)
             assertEquals(ApiResponse.Status.SUCCESS, viewModel.langList.value?.status)
         }

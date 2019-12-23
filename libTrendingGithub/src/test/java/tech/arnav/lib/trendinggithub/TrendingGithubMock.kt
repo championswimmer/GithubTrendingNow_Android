@@ -1,6 +1,7 @@
 package tech.arnav.lib.trendinggithub
 
 import okhttp3.OkHttpClient
+import okhttp3.logging.HttpLoggingInterceptor
 import okhttp3.mockwebserver.MockWebServer
 import retrofit2.Retrofit
 import retrofit2.converter.moshi.MoshiConverterFactory
@@ -11,7 +12,12 @@ object TrendingGithubMock {
 
     val mockWebServer = MockWebServer()
 
-    private val okHttpClient = OkHttpClient.Builder().build()
+    private val okHttpClient = OkHttpClient.Builder()
+        .addInterceptor(
+            HttpLoggingInterceptor().apply {
+                level = HttpLoggingInterceptor.Level.BODY
+            })
+        .build()
 
     private val retrofit = Retrofit.Builder()
         .client(okHttpClient)

@@ -19,6 +19,9 @@ data class Repository(
     @Json(name = "currentPeriodStars") val currentPeriodStars: Int,
     @Json(name = "builtBy") val builtBy: List<Author>
 ): Serializable, BaseModel {
+    /**
+     * using the url as unique id for repos
+     */
     override var id: String
         get() = url
         set(value) {}

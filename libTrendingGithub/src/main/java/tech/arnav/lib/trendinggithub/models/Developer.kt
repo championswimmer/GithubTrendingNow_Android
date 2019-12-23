@@ -14,6 +14,9 @@ data class Developer(
     @Json(name = "avatar") val avatar: String,
     @Json(name = "repo") val repo: Repo
 ): Serializable, BaseModel {
+    /**
+     * using username as if for developers
+     */
     override var id: String
         get() = username
         set(value) {}

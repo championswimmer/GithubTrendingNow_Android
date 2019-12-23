@@ -10,6 +10,9 @@ data class Language(
     @Json(name = "urlParam") val urlParam: String,
     @Json(name = "name") val name: String
 ) : Serializable, BaseModel {
+    /**
+     * using urlParam as unique id for languages
+     */
     override var id: String
         get() = urlParam
         set(value) {}

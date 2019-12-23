@@ -1,8 +1,7 @@
 package tech.arnav.githubtrending
 
 import android.content.Context
-import okio.Buffer
-import tech.arnav.githubtrending.viewmodels.GithubTrendingViewModelTest
+import java.io.BufferedReader
 
 /**
  * Created by championswimmer on 23/12/19.
@@ -10,10 +9,9 @@ import tech.arnav.githubtrending.viewmodels.GithubTrendingViewModelTest
 
 object AndroidTestUtils {
     @JvmStatic
-    fun readJson(context: Context, jsonFileName: String): Buffer {
-        val byteArray = context.assets.open("repositories.json").readBytes()
-        val buffer = Buffer()
-        buffer.write(byteArray)
-        return buffer
+    fun readJson(context: Context, jsonFileName: String): String {
+        val jsonInputStream = context.assets.open(jsonFileName)
+        val contents = jsonInputStream.bufferedReader().use(BufferedReader::readText)
+        return contents
     }
 }
