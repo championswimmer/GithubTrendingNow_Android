@@ -4,6 +4,7 @@ import android.content.Intent
 import android.view.View
 import com.bumptech.glide.Glide
 import kotlinx.android.synthetic.main.list_item_repository.view.*
+import tech.arnav.githubtrending.R
 import tech.arnav.githubtrending.ui.RepositoryDetailsActivity
 import tech.arnav.githubtrending.ui.textspannables.SpannableLanguage
 import tech.arnav.githubtrending.ui.textspannables.SpannableRepoName
@@ -24,7 +25,10 @@ class RepositoryListAdapter(
             itemView.tvLanguage.text = SpannableLanguage(it, item.languageColor)
         }
 
-        Glide.with(itemView).load(item.avatar).into(itemView.imgAvatar)
+        Glide.with(itemView)
+            .load(item.avatar)
+            .placeholder(R.drawable.ic_placeholder_repo_avatar)
+            .into(itemView.imgAvatar)
 
         itemView.cardRepo.setOnClickListener {
             val intent = Intent(itemView.context, RepositoryDetailsActivity::class.java)

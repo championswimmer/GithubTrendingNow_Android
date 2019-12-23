@@ -51,7 +51,10 @@ class RepositoryDetailsActivity : AppCompatActivity() {
                 tvLanguage.text = SpannableLanguage(it, languageColor)
             }
 
-            Glide.with(this@RepositoryDetailsActivity).load(avatar).into(imgAvatar)
+            Glide.with(this@RepositoryDetailsActivity)
+                .load(avatar)
+                .placeholder(R.drawable.ic_placeholder_repo_avatar)
+                .into(imgAvatar)
 
             rvAuthors.layoutManager = LinearLayoutManager(this@RepositoryDetailsActivity)
             rvAuthors.adapter = AuthorListAdapter(R.layout.list_item_developer).also {
