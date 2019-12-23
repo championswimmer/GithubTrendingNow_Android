@@ -12,6 +12,9 @@ class TrendingGithubMockApiTests {
 
     @Test
     fun get_languages() {
+        if (TestUtils.isAndroid()) {
+            return // only for JVM
+        }
         runBlocking {
             val langResp = TestUtils.readJson("assets/languages.json")
             TrendingGithubMock.mockWebServer.enqueue(MockResponse().setBody(langResp))
@@ -26,6 +29,9 @@ class TrendingGithubMockApiTests {
 
     @Test
     fun get_repositories() {
+        if (TestUtils.isAndroid()) {
+            return // only for JVM
+        }
         runBlocking {
             val repoResp = TestUtils.readJson("assets/repositories.json")
             TrendingGithubMock.mockWebServer.enqueue(MockResponse().setBody(repoResp))
@@ -37,6 +43,9 @@ class TrendingGithubMockApiTests {
 
     @Test
     fun get_developers() {
+        if (TestUtils.isAndroid()) {
+            return // only for JVM
+        }
         runBlocking {
             val devResp = TestUtils.readJson("assets/developers.json")
             TrendingGithubMock.mockWebServer.enqueue(MockResponse().setBody(devResp))

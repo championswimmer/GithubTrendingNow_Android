@@ -33,7 +33,9 @@ The app has two activities -
 There are tests for UI as well as for ViewModels
 For testing please run
 
-``
+```sh
+./gradlew connectedCheck
+```
 
 ### libTrendingGithub
 
@@ -44,6 +46,12 @@ For testing please run
 
 #### Test Setup
 There are unit tests with 100% coverage. '
+
+To run tests use
+
+```sh
+./gradlew :libTrendingGithub:test
+```
 
 We have both real (flaky) tests and tests with OkHttp's MockWebServer
 The `assets` folder contains sample responses used in mock tests.
