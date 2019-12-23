@@ -28,7 +28,7 @@ class GithubTrendingActivityTest {
     var mActivityTestRule = ActivityTestRule(GithubTrendingActivity::class.java)
 
     @Test
-    fun githubTrendingActivityTest() {
+    fun githubTrendingActivity_bottomnav_exists() {
         val frameLayout = onView(
             allOf(
                 withId(R.id.menu_repositories), withContentDescription("Repositories"),
@@ -73,7 +73,10 @@ class GithubTrendingActivityTest {
             )
         )
         frameLayout3.check(matches(isDisplayed()))
+    }
 
+    @Test
+    fun githubTrendingActivity_recyclerview_exists () {
         val recyclerView = onView(
             allOf(
                 withId(R.id.recyclerView),
@@ -91,6 +94,7 @@ class GithubTrendingActivityTest {
             )
         )
         recyclerView.check(matches(isDisplayed()))
+
     }
 
     private fun childAtPosition(

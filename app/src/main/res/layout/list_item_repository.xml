@@ -6,19 +6,19 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        android:foreground="?android:attr/selectableItemBackground"
         android:clickable="true"
         android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
         app:cardCornerRadius="5dp"
         app:cardElevation="3dp">
 
     <ImageView
-            tools:src="@drawable/ic_bottomnav_repos"
             android:id="@+id/imgAvatar"
             android:layout_width="48dp"
             android:layout_height="48dp"
             android:layout_gravity="left|center_vertical"
-            android:layout_margin="8dp" />
+            android:layout_margin="8dp"
+            tools:src="@drawable/ic_bottomnav_repos" />
 
     <LinearLayout
             android:layout_width="match_parent"

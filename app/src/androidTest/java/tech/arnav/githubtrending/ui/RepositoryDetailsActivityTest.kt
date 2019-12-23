@@ -7,11 +7,14 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import androidx.test.espresso.Espresso.onView
 import androidx.test.espresso.assertion.ViewAssertions.matches
+import androidx.test.espresso.internal.inject.InstrumentationContext
 import androidx.test.espresso.matcher.ViewMatchers.*
 import androidx.test.filters.LargeTest
+import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.rule.ActivityTestRule
 import androidx.test.runner.AndroidJUnit4
 import com.squareup.moshi.Moshi
+import com.squareup.moshi.Types
 import org.hamcrest.Description
 import org.hamcrest.Matcher
 import org.hamcrest.Matchers.allOf
@@ -20,6 +23,7 @@ import org.hamcrest.core.IsInstanceOf
 import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
+import tech.arnav.githubtrending.AndroidTestUtils
 import tech.arnav.githubtrending.R
 import tech.arnav.lib.trendinggithub.models.Repository
 
@@ -29,54 +33,24 @@ class RepositoryDetailsActivityTest {
 
     @Rule
     @JvmField
-    var mActivityTestRule = ActivityTestRule(RepositoryDetailsActivity::class.java)
+    var mActivityTestRule = ActivityTestRule(RepositoryDetailsActivity::class.java, false, false)
+
+    @InstrumentationContext
+    val context = InstrumentationRegistry.getInstrumentation().context
 
     val moshi = Moshi.Builder().build()
 
     @Test
-    fun repositoryDetailsActivityTest() {
+    fun repositoryDetailsActivity_projectName_authorName_matches() {
 
-        val repository = moshi.adapter<Repository>(Repository::class.java).fromJson(
-            """
-            {
-                "author": "naptha",
-                "name": "tesseract.js",
-                "avatar": "https://github.com/naptha.png",
-                "url": "https://github.com/naptha/tesseract.js",
-                "description": "Pure Javascript OCR for more than 100 Languages 📖🎉🖥",
-                "language": "JavaScript",
-                "languageColor": "#f1e05a",
-                "stars": 19186,
-                "forks": 1299,
-                "currentPeriodStars": 671,
-                "builtBy": [
-                  {
-                    "username": "jeromewu",
-                    "href": "https://github.com/jeromewu",
-                    "avatar": "https://avatars3.githubusercontent.com/u/5723124"
-                  },
-                  {
-                    "username": "bijection",
-                    "href": "https://github.com/bijection",
-                    "avatar": "https://avatars3.githubusercontent.com/u/8824442"
-                  },
-                  {
-                    "username": "antimatter15",
-                    "href": "https://github.com/antimatter15",
-                    "avatar": "https://avatars2.githubusercontent.com/u/30054"
-                  },
-                  {
-                    "username": "loderunner",
-                    "href": "https://github.com/loderunner",
-                    "avatar": "https://avatars0.githubusercontent.com/u/731497"
-                  }
-                ]
-              }
-        """.trimIndent()
+        val repoList = moshi.adapter<List<Repository>>(
+            Types.newParameterizedType(List::class.java, Repository::class.java)
+        ).fromJson(
+            AndroidTestUtils.readJson(context, "repositories.json")
         )
 
         mActivityTestRule.launchActivity(Intent().apply {
-            putExtra(RepositoryDetailsActivity.BUNDLE_KEY_REPO, repository)
+            putExtra(RepositoryDetailsActivity.BUNDLE_KEY_REPO, repoList!![1])
         })
 
         val textView = onView(
