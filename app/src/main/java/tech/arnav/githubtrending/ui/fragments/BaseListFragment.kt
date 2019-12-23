@@ -33,6 +33,10 @@ abstract class BaseListFragment<T: BaseModel> : Fragment() {
         }
     }
 
+    /**
+     * implement in the subclass to return an adapter as required
+     * this adapter would be used with the recyclerview in this fragment
+     */
     abstract fun getAdapter(): BaseListAdapter<T>
 
     @LayoutRes
@@ -57,8 +61,15 @@ abstract class BaseListFragment<T: BaseModel> : Fragment() {
         return rootView
     }
 
+    /**
+     * called when pull-down-to-refresh occurs. override and implement refresh logic
+     */
     abstract fun onSwipeRefresh(): Unit?
 
+    /**
+     * this handles changes in the livedata, and shows the progressbar
+     * and error toast accordingly
+     */
     fun handleResponse(response: ApiResponse<List<T>>) {
         when (response.status) {
             ApiResponse.Status.NONE -> {
