@@ -13,6 +13,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.SimpleItemAnimator
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
 import kotlinx.android.synthetic.main.fragment_list_base.view.*
+import tech.arnav.githubtrending.R
 import tech.arnav.githubtrending.data.ApiResponse
 import tech.arnav.githubtrending.ui.adapters.BaseListAdapter
 import tech.arnav.githubtrending.viewmodels.GithubTrendingViewModel
@@ -45,6 +46,10 @@ abstract class BaseListFragment<T: BaseModel> : Fragment() {
         val rootView = inflater.inflate(getLayoutResId(), container, false)
         swipeRefreshLayout = rootView.swipeRefreshLayout
         swipeRefreshLayout.setOnRefreshListener{ onSwipeRefresh() }
+        swipeRefreshLayout.setColorSchemeResources(
+            R.color.colorPrimary,
+            R.color.colorAccent
+        )
         listAdapter = getAdapter()
         rootView.recyclerView.layoutManager = LinearLayoutManager(activity)
         rootView.recyclerView.adapter = listAdapter
